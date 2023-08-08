@@ -1,0 +1,90 @@
+{
+  "image": "todo",
+  "width": 240,
+  "height": 980,
+  "targets": [
+    { "x": 51, "y": 53, "r": 20, "action": "key_power", "type": "circle" },
+    {
+      "x": 120,
+      "y": 380,
+      "r": 25,
+      "action": "key_home",
+      "type": "circle"
+    },
+    {
+      "x": 120,
+      "y": 450,
+      "r": 25,
+      "action": "key_media_play_pause",
+      "type": "circle"
+    },
+    {
+      "x": 52,
+      "y": 380,
+      "r": 25,
+      "action": "key_back",
+      "type": "circle"
+    },
+    {
+      "x": 52,
+      "y": 521,
+      "r": 25,
+      "action": "key_volume_up",
+      "type": "circle"
+    },
+    {
+      "x": 52,
+      "y": 586,
+      "r": 25,
+      "action": "key_volume_down",
+      "type": "circle"
+    },
+    {
+      "x": 52,
+      "y": 658,
+      "r": 25,
+      "action": "key_mute",
+      "type": "circle"
+    },
+    {
+      "x1": 68,
+      "x2": 168,
+      "y1": 284,
+      "y2": 340,
+      "action": "key_dpad_down",
+      "type": "rectangle"
+    },
+    {
+      "x1": 68,
+      "x2": 168,
+      "y1": 150,
+      "y2": 210,
+      "action": "key_dpad_up",
+      "type": "rectangle"
+    },
+    {
+      "x1": 169,
+      "x2": 217,
+      "y1": 158,
+      "y2": 326,
+      "action": "key_dpad_right",
+      "type": "rectangle"
+    },
+    {
+      "x1": 24,
+      "x2": 72,
+      "y1": 158,
+      "y2": 326,
+      "action": "key_dpad_left",
+      "type": "rectangle"
+    },
+    {
+      "x": 120,
+      "y": 250,
+      "r": 50,
+      "action": "key_button_select",
+      "type": "circle"
+    },
+    { "x": 120, "y": 110, "r": 25, "action": "send_text", "type": "circle" }
+  ]
+}

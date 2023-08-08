@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script>
+      function remote_event(event, remote) {
+        let request = new XMLHttpRequest()
+        request.open("GET", `remote_event?x=${event.offsetX}&y=${event.offsetY}&w=${remote.width}&h=${remote.height}`, )
+        request.send()
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: rgb(2, 0, 40);
+        background: -moz-linear-gradient(
+          90deg,
+          rgba(2, 0, 40, 1) 0%,
+          rgba(15, 15, 15, 1) 49%,
+          rgba(0, 60, 77, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          90deg,
+          rgba(2, 0, 40, 1) 0%,
+          rgba(15, 15, 15, 1) 49%,
+          rgba(0, 60, 77, 1) 100%
+        );
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 40, 1) 0%,
+          rgba(15, 15, 15, 1) 49%,
+          rgba(0, 60, 77, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020028",endColorstr="#003c4d",GradientType=1);
+      }
+
+      #remote-img {
+        cursor: pointer;
+        height: 95%;
+        margin: 2.5%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+      <img
+        onclick="remote_event(event, this)"
+        id="remote-img"
+        src="static/remote.png"
+        alt="Firestick Remote"
+        ismap
+      />
+    </a>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+adb-shell
+pywebview
+Flask
+dotmap
